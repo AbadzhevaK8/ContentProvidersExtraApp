@@ -22,5 +22,8 @@
             </intent-filter>
         </activity>
     </application>
+    <queries>
+        <provider android:authorities="com.abadzheva.shoppinglist" />
+    </queries>
 
 </manifest>

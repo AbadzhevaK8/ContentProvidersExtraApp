@@ -1,10 +1,13 @@
 package com.abadzheva.contentprovidersextraapp
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //==============================================
+        // ==============================================
 
         thread {
             val cursor =
